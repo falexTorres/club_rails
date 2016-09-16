@@ -89,9 +89,9 @@
 						      <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em>
 						    </span>
 						    <div class="collection">
-							    <a href="#!" class="collection-item">Thursday's<span class="badge black-text">7:00pm-11:00pm</span></a>
-							    <a href="#!" class="collection-item">Friday's<span class="badge black-text">7:00pm-11:00pm</span></a>
-							    <a href="#!" class="collection-item">Saturday's<span class="badge black-text">7:00pm-11:00pm</span></a>
+							    <a href="" class="collection-item">Thursday's<span class="badge black-text">7:00pm-11:00pm</span></a>
+							    <a href="" class="collection-item">Friday's<span class="badge black-text">7:00pm-11:00pm</span></a>
+							    <a href="" class="collection-item">Saturday's<span class="badge black-text">7:00pm-11:00pm</span></a>
   							</div>
 						</div>
 					</div>
@@ -441,16 +441,16 @@
 								        <div id="pagerDiv" style="margin-left: 17.5%"> 									       
 												<div id="winePager" style="display: none">
 													<ul class="pagination">												    
-													    <li class="active waves-effect"><a href="#!">1</a></li>
-													    <li class="waves-effect"><a href="#!">2</a></li>
-													    <li class="waves-effect"><a href="#!">3</a></li>										
+													    <li class="active waves-effect"><a href="">1</a></li>
+													    <li class="waves-effect"><a href="">2</a></li>
+													    <li class="waves-effect"><a href="">3</a></li>										
 													</ul>
 												</div>	
 												<div id="beerPager" style="display: none">
 													<ul class="pagination">												    
-													    <li class="active waves-effect"><a href="#!">1</a></li>
-													    <li class="waves-effect"><a href="#!">2</a></li>
-													    <li class="waves-effect"><a href="#!">3</a></li>										
+													    <li class="active waves-effect"><a href="">1</a></li>
+													    <li class="waves-effect"><a href="">2</a></li>
+													    <li class="waves-effect"><a href="">3</a></li>										
 													</ul>
 												</div>								        										     
 									        </div>	
@@ -462,11 +462,27 @@
 				        </div>
 			      	</div>
 			      	<div id="contactDiv" class="row" style="display: none">		    
-				        <div class="card-panel text-center">
-									<%= month_calendar do |date| %>
-										<%= date.day %>
-									<% end %>
-				        </div>
+								<div class="col s12 l12 m12">
+				        	<div class="card-panel text-center">
+										<%= month_calendar do |date| %>
+											<%= date.day %>
+										<% end %>
+				        	</div>
+								</div>
+								<div class="col s12 l12 m12">
+									<div class="card-panel text-center">
+										<h5>Register for event</h5>
+										<%= form_tag("/register", method: "post") do %>
+											<div class="row">
+												<div class="col s4 m4 l4 input-field offset-l4">
+													<%= label_tag :email_input, "Please provide your email address:", class: "pull-left" %>
+													<%= text_field_tag(:email_input) %>
+												</div>
+											</div>
+											<a class="btn">Submit</a>
+										<% end %>
+									</div>
+								</div>
 							</div>
 			    	</div>
 			    </div>			    
