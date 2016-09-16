@@ -148,7 +148,6 @@ function showFoodMenu() {
 jQuery(document).ready(function() {
 	
 	/* INITIALIZATIONS */
-	
 	$('.slider').slider();
 	
 	$('.collapsible').collapsible({

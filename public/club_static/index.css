@@ -51,16 +51,16 @@ body {
 }
 
 .nav-top-divider.transparent {
-	height: 30%;
-	padding-bottom: 5%;
+	height: 35%;
+	padding-bottom: 16%;
 }
 
 .top-brand-logo.brand-logo {
 	/*font-size: 5.1rem;*/
-	font-size: 800%;
-	margin-top: 7%;
-	margin-left: 33%;
-	padding-bottom: 8%;
+	font-size: 600%;
+	margin-top: 8%;
+	margin-left: 37%;
+	padding-bottom: 5%;
 	color: rgba(227, 247, 249, 0.94);
 	font-family: titleFont;
 	font-weight: 400;
@@ -115,6 +115,43 @@ footer.page-footer.transparent .footer-copyright.container-fluid {
 	margin-top: 0.5%;
 	line-height: 1rem;
 }
+
+span.calendar-title {
+	font-family: serif;
+  font-variant: small-caps;
+  font-style: initial;
+  font-size: xx-large;
+}
+
+.glyphicon.glyphicon-chevron-right {
+	color: black;
+}
+
+.glyphicon.glyphicon-chevron-left {
+	color: black;
+}
+
+.glyphicon.glyphicon-chevron-right:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.glyphicon.glyphicon-chevron-left:hover {
+	color: red;
+	text-decoration: none;
+}
+
+span.calendar-title {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+span.calendar-title:hover {
+	padding-right: 5%;
+	padding-left: 5%;
+	color: red;
+}
+
 /* make keyframes that tell the start state and the end state of our object */
 
 .collection-item span.badge {
