@@ -1,1 +1,1 @@
-web: RAILS_ENV=development bundle exec rails s
+web: RAILS_ENV=development bundle exec rails server -p $PORT
