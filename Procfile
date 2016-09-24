@@ -1,1 +1,2 @@
-web: bundle exec rails server thin -p $PORT -e $RACK_ENV
+web: RAILS_ENV=development bundle exec rails s
+worker: rake db:migrate
