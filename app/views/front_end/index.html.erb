@@ -84,14 +84,14 @@
 					</div>
 					<div class="col m6 l4">
 						<div class="card-panel">
-						    <h5>&#5076;&#5036;&#5086;&#5087;&#5099;&#5047;&#5036;</h5>
+						    <h5><%=@home.title_1%></h5>
 						    <span class="black-text">
-						      <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em>
+						      <em><%=@home.content_1%></em>
 						    </span>
 						    <div class="collection">
-							    <a href="" class="collection-item">Thursday's<span class="badge black-text">7:00pm-11:00pm</span></a>
-							    <a href="" class="collection-item">Friday's<span class="badge black-text">7:00pm-11:00pm</span></a>
-							    <a href="" class="collection-item">Saturday's<span class="badge black-text">7:00pm-11:00pm</span></a>
+							    <a href="" class="collection-item">Thursday's<span class="badge black-text"><%=@home.hours_thursday%></span></a>
+							    <a href="" class="collection-item">Friday's<span class="badge black-text"><%=@home.hours_friday%></span></a>
+							    <a href="" class="collection-item">Saturday's<span class="badge black-text"><%=@home.hours_saturday%></span></a>
   							</div>
 						</div>
 					</div>
@@ -101,34 +101,34 @@
 				      	<div class="row">
 					        <div class="col s12 m8 l8">
 						        <div class="card-panel">
-						          <h5>Info</h5>
+						          <h5><%=@about.title_1%></h5>
 						          <span class="black-text">
-						          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												<%=@about.content_1%>
 						          </span>
 						        </div>
 						    <div class="row">
 							    <div class="col s12 m6 l6">
 							        <div class="card-panel">
-										<h5>Drink Specials</h5>
+										<h5><%=@about.title_2%></h5>
 										<span class="black-text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											<%=@about.content_2%>
 										</span>
 									</div>
 							    </div>
 							    <div class="col s12 m6 l6">
 							        <div class="card-panel">
-										<h5>Food Specials</h5>
+										<h5><%=@about.title_3%></h5>
 										<span class="black-text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											<%=@about.content_3%>
 										</span>
 									</div>
 							    </div>
 							     <div class="col s12 m12 l12">
 							        <div class="card-panel">
-											<h5>Facebook</h5>
+											<h5><%=@about.title_4%></h5>
 											<span class="black-text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										</span>
+												<%=@about.content_4%>
+											</span>
 									</div>
 							    </div>
 						    </div>
@@ -137,18 +137,18 @@
 					    
 						    <div class="col s12 m4 l4">
 							    <div class="card-panel">
-							    	<h5>Contact</h5>
+							    	<h5><%=@about.title_5%></h5>
 							    	<span class="black-text">
-							    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							        </span>
+											<%=@about.content_5%>
+							      </span>
 							    </div>
 						    </div>
 						     <div class="col s12 m4 l4">
 							    <div class="card-panel">
-							    	<h5>Hours</h5>
+							    	<h5><%=@about.title_6%></h5>
 							    	<span class="black-text">
-							    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							        </span>
+											<%=@about.content_6%>
+							      </span>
 							    </div>
 						    </div>
 				      	</div>	
@@ -466,6 +466,13 @@
 				        	<div class="card-panel text-center">
 										<%= month_calendar do |date| %>
 											<%= date.day %>
+											<div>
+												<% @events.each do |e| %>
+													<% if e.start_time.to_date == date %>
+														<%= e.name %>		
+													<% end %>
+												<% end %>
+											</div>
 										<% end %>
 				        	</div>
 								</div>

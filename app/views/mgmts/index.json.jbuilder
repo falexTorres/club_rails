@@ -1,0 +1,1 @@
+json.array! @mgmts, partial: 'mgmts/mgmt', as: :mgmt

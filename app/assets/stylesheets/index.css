@@ -1,0 +1,277 @@
+/*.nav-link:hover {
+	color: yellow;
+}*/
+
+@font-face {
+	font-family: titleFont;
+	src: url("Pacifico.ttf");
+}
+
+nav ul li a:hover, nav ul li.active {
+    color: white;
+    text-decoration: blink;
+}
+
+
+body { 
+	background: url(Zach2.png) no-repeat center 25% fixed; 
+	z-index: -2;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*body {
+	background-image: url("klyde-mobile.jpg");
+	background-position: -260% 4%;
+}*/
+
+.col.l3.m3.nav-button {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-button.hoverable:hover {
+	background-color: rgba(186,204,200, 0.9);
+	transition: box-shadow .5s;
+	box-shadow: 0 57px 48px 0 rgba(0,0,0,0.5),0 -1px 32px 0 rgba(0,0,0,0.19);
+
+	color: black;
+	text-decoration: blink;
+}
+
+.nav-active.active {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.nav-row.row.center-align {
+	margin-bottom: -0.55%;
+}
+
+.nav-top-divider.transparent {
+	height: 35%;
+	padding-bottom: 16%;
+}
+
+.top-brand-logo.brand-logo {
+	/*font-size: 5.1rem;*/
+	font-size: 600%;
+	margin-top: 8%;
+	margin-left: 37%;
+	padding-bottom: 5%;
+	color: rgba(227, 247, 249, 0.94);
+	font-family: titleFont;
+	font-weight: 400;
+	text-shadow: 0.3rem 0.2rem #2f7e87;
+
+	z-index: 1;
+}
+
+div.col > div.card-panel:hover {
+	cursor: hand;
+	transition: box-shadow 1.5s;
+	box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.5),0 -1px 32px 0 rgba(0,0,0,0.19);
+}
+
+.top-brand-logo.brand-logo:hover {
+	cursor: hand;
+}
+
+.nav-wrapper.text-align-center {
+	text-align: center;
+}
+
+.card-panel.page-content.grey.lighten-2.main-panel {
+	margin-bottom: 0 !important;
+	z-index: -1;
+	background-color: rgba(224, 224, 224, 0.54) !important;
+}
+
+div.row {
+	margin-bottom: 0px;
+}
+
+.page-footer.transparent {
+	margin-top: 0px;
+    padding-top: 0px;
+}
+
+.slider .indicators li.indicator-item {
+	border-style: solid;
+	background-color: #f1f0eb;
+	border-color: #333;
+	border-width: 0.2rem;
+	border-radius: 2rem;
+}
+
+.slider .indicators li.indicator-item.active {
+	background-color: #333;
+	color: white;
+}
+
+footer.page-footer.transparent .footer-copyright.container-fluid {
+	margin-top: 0.5%;
+	line-height: 1rem;
+}
+
+span.calendar-title {
+	font-family: serif;
+  font-variant: small-caps;
+  font-style: initial;
+  font-size: xx-large;
+}
+
+.glyphicon.glyphicon-chevron-right {
+	color: black;
+}
+
+.glyphicon.glyphicon-chevron-left {
+	color: black;
+}
+
+.glyphicon.glyphicon-chevron-right:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.glyphicon.glyphicon-chevron-left:hover {
+	color: red;
+	text-decoration: none;
+}
+
+span.calendar-title {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+span.calendar-title:hover {
+	padding-right: 5%;
+	padding-left: 5%;
+	color: red;
+}
+span.select2-container--default .select2-selection--single {
+	width: 15rem;
+}
+
+span.select2-container--default .select2-selection--single .select2-selection__arrow {
+	display: none;
+}
+
+span.select2-container--default .select2-selection--single.select2-selection__rendered {
+	/*width: 40%;*/
+}
+/* make keyframes that tell the start state and the end state of our object */
+
+.collection-item span.badge {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+div.collection a.collection-item {
+	color: black;
+}
+
+div.collection a.collection-item:hover {
+	color: black;
+	border-style: none;
+}
+
+img.responsive-img.circle.materialboxed {
+	/*margin-left: 25%;*/
+	display: inline-block;
+}
+
+.menu-top.waves-effect.waves-red.btn.orange.lighten-5:hover {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+a.menu-active-top {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+table.highlight>tbody>tr.active-menu-select {
+    background-color: #f2f2f2;
+}
+
+div.row-pad-me {
+	padding-bottom: 2.5%;
+}
+
+.pagination li.active.waves-effect a {
+    background-color: #4dd0e1;
+	border-color: #4dd0e1;
+	border-radius: 1rem;
+}
+
+.pagination li.active.waves-effect a:hover {
+    color: black;
+}
+
+.pagination li.active.waves-effect {
+    background-color: #4dd0e1;
+	border-color: #4dd0e1;
+	border-radius: 1rem;
+}
+
+.pagination li.waves-effect a {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.pagination li.waves-effect a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #4dd0e1;
+	border-color: #4dd0e1;
+	border-radius: 0.1rem;
+}
+
+    
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start 
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1) */
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+}
+ 
+.fade-in.one {
+	-webkit-animation-delay: 0.1s;
+	-moz-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+ 
+.fade-in.two {
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay:0.5s;
+	animation-delay: 0.5s;
+}
+ 
+.fade-in.three {
+	-webkit-animation-delay: 0.9s;
+	-moz-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+}
+ 
+ 
+ 
+
+
+
+
+

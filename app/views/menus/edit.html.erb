@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col s12 m12 l12">
+		<h1>Menu Section</h1>
+		<div class="card-panel">
+			<%= render 'form', menu: @menu %>
+		</div>
+	</div>
+</div>
+<script type="application/javascript">
+	document.addEventListener("turbolinks:load", function() {
+		$('select').select2();
+		$('selec').select2();
+	});
+</script>

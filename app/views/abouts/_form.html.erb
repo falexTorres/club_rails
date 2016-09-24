@@ -1,0 +1,47 @@
+<%= form_for(about) do |f| %>
+  <% if about.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(about.errors.count, "error") %> prohibited this about from being saved:</h2>
+
+      <ul>
+      <% about.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	
+	<%= f.label :title_1, class: '' %>
+	<%= f.text_field :title_1, class: '' %>
+	<%= f.label :content_1, class: '' %>
+	<%= f.text_field :content_1, class: '' %>
+
+	<%= f.label :title_2, class: '' %>
+	<%= f.text_field :title_2, class: '' %>
+	<%= f.label :content_2, class: '' %>
+	<%= f.text_field :content_2, class: '' %>
+
+	<%= f.label :title_3, class: '' %>
+	<%= f.text_field :title_3, class: '' %>
+	<%= f.label :content_3, class: '' %>
+	<%= f.text_field :content_3, class: '' %>
+
+	<%= f.label :title_4, class: '' %>
+	<%= f.text_field :title_4, class: '' %>
+	<%= f.label :content_4, class: '' %>
+	<%= f.text_field :content_4, class: '' %>
+
+	<%= f.label :title_5, class: '' %>
+	<%= f.text_field :title_5, class: '' %>
+	<%= f.label :content_5, class: '' %>
+	<%= f.text_field :content_5, class: '' %>
+	
+	<%= f.label :title_6, class: '' %>
+	<%= f.text_field :title_6, class: '' %>
+	<%= f.label :content_6, class: '' %>
+	<%= f.text_field :content_6, class: '' %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

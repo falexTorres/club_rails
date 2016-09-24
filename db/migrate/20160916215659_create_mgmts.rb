@@ -1,0 +1,8 @@
+class CreateMgmts < ActiveRecord::Migration[5.0]
+  def change
+    create_table :mgmts do |t|
+
+      t.timestamps
+    end
+  end
+end

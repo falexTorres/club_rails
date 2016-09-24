@@ -1,0 +1,39 @@
+<%= form_for(menu) do |f| %>
+  <% if menu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(menu.errors.count, "error") %> prohibited this menu from being saved:</h2>
+
+      <ul>
+      <% menu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<h5>Select category</h5>
+	<select id="headSelect">
+		<option selected>food</option>
+		<option>wine</option>
+		<option>beer</option>
+	</select>
+	<br>
+	<hr>
+	<div id="foodDiv">
+		<h5>Select food item</h5>
+		<%= render 'food', menu: @menu, f: f %>
+	</div>
+
+	<div id="beerDiv" style="display: none">
+		<h5>Select beer item</h5>
+		<%= render 'beer', menu: @menu, f: f %>
+	</div>	
+
+	<div id="wineDiv" style="display: none">
+		<h5>Select wine item</h5>
+		<%= render 'wine', menu: @menu, f: f %>
+	</div>	
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
