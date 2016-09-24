@@ -4,10 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
-group :production d
-	gem 'pg'
-end
-
 gem 'simple_calendar'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -49,7 +45,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :production d
+group :production do
 	gem 'pg'
 end
 
