@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 	resources :homes
 	resources :menus
   resources :events
-	get '/', to: 'front_end#index'
+	resources :users
+	get '/login', to: 'users#login'
+	patch '/login', to: 'users#verify'
+	post '/login', to: 'users#verify'
 	get '/mgmt', to: 'events#index'
+	get '/', to: 'front_end#index'
 end

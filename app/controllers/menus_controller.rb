@@ -1,5 +1,6 @@
 class MenusController < ApplicationController
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
+	before_filter :authenticate
 	layout "mgmts.html.erb"
   # GET /menus
   # GET /menus.json

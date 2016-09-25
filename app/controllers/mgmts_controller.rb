@@ -1,5 +1,6 @@
 class MgmtsController < ApplicationController
   before_action :set_mgmt, only: [:show, :edit, :update, :destroy]
+	before_filter :authenticate
   def index
     @events = Event.all
   end

@@ -1,5 +1,6 @@
 class AboutsController < ApplicationController
   before_action :set_about, only: [:show, :edit, :update, :destroy]
+	before_filter :authenticate
 	layout "mgmts.html.erb"
   # GET /abouts
   # GET /abouts.json
