@@ -22,7 +22,8 @@ class UsersController < ApplicationController
 	end
 
 	def logout
-		reset_session
+		session['user'] = nil
+		redirect_to :action => 'login'
 	end
 	
   private

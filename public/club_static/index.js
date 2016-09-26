@@ -111,6 +111,11 @@ menuMap["#wine3_3"] = [wine3_3Description, wine3_3Img];
 menuMap["#wine3_4"] = [wine3_4Description, wine3_4Img];
 menuMap["#wine3_5"] = [wine3_5Description, wine3_5Img];
 
+function eventRegister(name) {
+	console.log(name);
+	$('#modal-title').html(name);
+	$('#registerModal').openModal();
+}
 
 function showBeerMenu() {
 	$('#food-nav-bar').hide();

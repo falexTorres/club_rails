@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160923160000) do
+ActiveRecord::Schema.define(version: 20160925160000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -151,8 +151,43 @@ ActiveRecord::Schema.define(version: 20160923160000) do
     t.string   "wine3_2Path"
     t.string   "wine3_3Path"
     t.string   "wine3_4Path"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "food1_price"
+    t.string   "food2_price"
+    t.string   "food3_price"
+    t.string   "food4_price"
+    t.string   "food5_price"
+    t.string   "beer1_1_price"
+    t.string   "beer1_2_price"
+    t.string   "beer1_3_price"
+    t.string   "beer1_4_price"
+    t.string   "beer1_5_price"
+    t.string   "beer2_1_price"
+    t.string   "beer2_2_price"
+    t.string   "beer2_3_price"
+    t.string   "beer2_4_price"
+    t.string   "beer2_5_price"
+    t.string   "beer3_1_price"
+    t.string   "beer3_2_price"
+    t.string   "beer3_3_price"
+    t.string   "beer3_4_price"
+    t.string   "beer3_5_price"
+    t.string   "wine1_1_price"
+    t.string   "wine1_2_price"
+    t.string   "wine1_3_price"
+    t.string   "wine1_4_price"
+    t.string   "wine1_5_price"
+    t.string   "wine2_1_price"
+    t.string   "wine2_2_price"
+    t.string   "wine2_3_price"
+    t.string   "wine2_4_price"
+    t.string   "wine2_5_price"
+    t.string   "wine3_1_price"
+    t.string   "wine3_2_price"
+    t.string   "wine3_3_price"
+    t.string   "wine3_4_price"
+    t.string   "wine3_5_price"
   end
 
   create_table "mgmts", force: :cascade do |t|

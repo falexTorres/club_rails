@@ -469,30 +469,34 @@
 											<div>
 												<% @events.each do |e| %>
 													<% if e.start_time.to_date == date %>
-														<%= e.name %>		
+														<a onclick="eventRegister('<%=e.name%>')"><%= e.name %></a>		
 													<% end %>
 												<% end %>
 											</div>
 										<% end %>
 				        	</div>
 								</div>
-								<div class="col s12 l12 m12">
-									<div class="card-panel text-center">
-										<h5>Register for event</h5>
+							</div>
+						</div>
+			    </div>			    
+				</div>
+			</div>
+		</div>
+				
+		<!--	</div> 			
+		</div> -->
+						<div id="registerModal" class="modal text-center">
+							<div class="container" style="margin-top: 10%">
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<h4 id="modal-title"></h4>
+										<p>In order to rsvp for this event, please provide your email address.</p>
 										<%= form_tag("/register", method: "post") do %>
-											<div class="row">
-												<div class="col s4 m4 l4 input-field offset-l4">
-													<%= label_tag :email_input, "Please provide your email address:", class: "pull-left" %>
-													<%= text_field_tag(:email_input) %>
-												</div>
-											</div>
-											<a class="btn">Submit</a>
-										<% end %>
+											<%= label_tag :email_input, "Please provide your email address:", class: "pull-left" %>
+											<%= text_field_tag(:email_input) %>
+											<%= submit_tag "Submit", class: 'modal-action modal-close waves-effect waves-green btn-flat' %>
+										<% end %>	
 									</div>
 								</div>
 							</div>
-			    	</div>
-			    </div>			    
-				</div>
-		<!--	</div> 			
-		</div> -->
+						</div>
