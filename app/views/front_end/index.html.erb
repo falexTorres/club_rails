@@ -173,16 +173,16 @@
 						        <div class="row"> 
 							        <div id="descriptionDiv" class="col-lg-3 col-med-2 pull-left">
 								        <div id="foodDescription">
-									        <h4>Fish Tacos</h4>
-									        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									        <h4><%= @menu.food1 %></h4>
+									        <p><%= @menu.food1Desc %></p>
 								        </div>
 								        <div id="beerDescription" style="display: none">
-									        <h4>Lonestar</h4>
-									        <p>Hey, at least it's not horse piss.</p>
+									        <h4><%= @menu.beer1_1 %></h4>
+									        <p><%= @menu.beer1_1Desc %></p>
 								        </div>
 								        <div id="wineDescription" style="display: none">
-									        <h4>House Merlot de Burg</h4>
-									        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									        <h4><%= @menu.wine1_1 %></h4>
+									        <p><%= @menu.wine1_1Desc %></p>
 								        </div>								        
 							        </div>
 							        <div id="pictureDiv" class="col-lg-6 col-med-6">
@@ -210,16 +210,16 @@
 										
 										        <tbody>
 										          <tr id="food1" class="active-menu-select">
-										            <td id="foodDefault" class="active-menu-select">Fish Tacos</td>									     
-										            <td>$0.87</td>
+										            <td id="foodDefault" class="active-menu-select"><%= @menu.food1 %></td>									     
+										            <td><%= @menu.food1_price %></td>
 										          </tr>
 										          <tr id="food2">
-										            <td>Babies</td>					           
-										            <td>$3.76</td>
+										            <td><%= @menu.food2 %></td>					           
+										            <td><%= @menu.food2_price %></td>
 										          </tr>
 										          <tr id="food3">
-										            <td>My Shorts</td>							            
-										            <td>$7.00</td>
+										            <td><%= @menu.food3 %></td>							            
+										            <td><%= @menu.food3_price %></td>
 										          </tr>
 										        </tbody>
 									      	</table>
@@ -247,24 +247,24 @@
 												
 												        <tbody>
 												          <tr id="wine1_1" class="active-menu-select">
-												            <td id="wineDefault">House Merlot de Burg</td>									     
-												            <td>$0.87</td>
+																	<td id="wineDefault"><%= @menu.wine1_1 %></td>	     
+												            <td><%= @menu.wine1_1_price %></td>
 												          </tr>
 												          <tr id="wine1_2">
-												            <td>Merlot # 2</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.wine1_2 %></td>					           
+												            <td><%= @menu.wine1_2_price %></td>
 												          </tr>
 												          <tr id="wine1_3">
-												            <td>Merlot # 3</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine1_3 %></td>							            
+												            <td><%= @menu.wine1_3_price %></td>
 												          </tr>
 												          <tr id="wine1_4">
-												            <td>Merlot # 4</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine1_4 %></td>							            
+												            <td><%= @menu.wine1_4_price %></td>
 												          </tr>
 												          <tr id="wine1_5">
-												            <td>Merlot # 5</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine1_5 %></td>							            
+												            <td><%= @menu.wine1_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -280,24 +280,24 @@
 												
 												        <tbody>
 												          <tr id="wine2_1" class="active-menu-select">
-												            <td>Cabernet # 1</td>									     
-												            <td>$0.87</td>
+												            <td><%= @menu.wine2_1 %></td>									     
+												            <td><%= @menu.wine2_1_price %></td>
 												          </tr>
 												          <tr id="wine2_2">
-												            <td>Cabernet # 2</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.wine2_2 %></td>					           
+												            <td><%= @menu.wine2_2_price %></td>
 												          </tr>
 												          <tr id="wine2_3">
-												            <td>Cabernet # 3</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine2_3 %></td>							            
+												            <td><%= @menu.wine2_3_price %></td>
 												          </tr>
 												          <tr id="wine2_4">
-												            <td>Cabernet # 4</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine2_4 %></td>							            
+												            <td><%= @menu.wine2_4_price %></td>
 												          </tr>
 												           <tr id="wine2_5">
-												            <td>Cabernet # 5</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine2_5 %></td>							            
+												            <td><%= @menu.wine2_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -313,24 +313,24 @@
 												
 												        <tbody>
 												          <tr id="wine3_1" class="active-menu-select">
-												            <td>Moscato # 1</td>									     
-												            <td>$0.87</td>
+												            <td><%= @menu.wine3_1 %></td>									     
+												            <td><%= @menu.wine3_1_price %></td>
 												          </tr>
 												          <tr id="wine3_2">
-												            <td>Moscato # 2</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.wine3_2 %></td>			           
+												            <td><%= @menu.wine3_2_price %></td>
 												          </tr>
 												          <tr id="wine3_3">
-												            <td>Moscato # 3</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine3_3 %></td>							            
+												            <td><%= @menu.wine3_3_price %></td>
 												          </tr>
 												          <tr id="wine3_4">
-												            <td>Moscato # 4</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine3_4 %></td>           
+												            <td><%= @menu.wine3_4_price %></td>
 												          </tr>
 												          <tr id="wine3_5">
-												            <td>Moscato # 5</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.wine3_5 %></td>           
+												            <td><%= @menu.wine3_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -348,24 +348,24 @@
 												
 												        <tbody>
 												          <tr id="beer1_1">
-												            <td id="beerDefault">Lonestar</td>									     
-												            <td>$0.87</td>
+												            <td id="beerDefault"><%= @menu.beer1_1 %></td>									     
+												            <td><%= @menu.beer1_1_price %></td>
 												          </tr>
 												          <tr id="beer1_2">
-												            <td>Shiner Bock</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.beer1_2 %></td>					  
+												            <td><%= @menu.beer1_2_price %></td>
 												          </tr>
 												          <tr id="beer1_3">
-												            <td>Shiner Light Blonde</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer1_3 %></td>           
+												            <td><%= @menu.beer1_3_price %></td>
 												          </tr>
 												          <tr id="beer1_4">
-												            <td>Blue Moon</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer1_4 %></td>           
+												            <td><%= @menu.beer1_4_price %></td>
 												          </tr>
 												          <tr id="beer1_5">
-												            <td>Stella Artois</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer1_5 %></td>           
+												            <td><%= @menu.beer1_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -381,24 +381,24 @@
 												
 												        <tbody>
 												          <tr id="beer2_1" class="active-menu-select">
-												            <td>Keystone Light</td>									     
-												            <td>$0.87</td>
+												            <td><%= @menu.beer2_1 %></td>			     
+												            <td><%= @menu.beer2_1_price %></td>
 												          </tr>
 												          <tr id="beer2_2">
-												            <td>Miller Lite</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.beer2_2 %></td>           
+												            <td><%= @menu.beer2_2_price %></td>
 												          </tr>
 												          <tr id="beer2_3">
-												            <td>Coors Light</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer2_3 %></td>           
+												            <td><%= @menu.beer2_3_price %></td>
 												          </tr>
 												          <tr id="beer2_4">
-												            <td>Budweiser</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer2_4 %></td>           
+												            <td><%= @menu.beer2_4_price %></td>
 												          </tr>
 												          <tr id="beer2_5">
-												            <td>Bud Light</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer2_5 %></td>           
+												            <td><%= @menu.beer2_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -414,24 +414,24 @@
 												
 												        <tbody>
 												          <tr id="beer3_1" class="active-menu-select">
-												            <td>Coors Original</td>									     
-												            <td>$0.87</td>
+												            <td><%= @menu.beer3_1 %></td>			     
+												            <td><%= @menu.beer3_1_price %></td>
 												          </tr>
 												          <tr id="beer3_2">
-												            <td>Miller High Life</td>					           
-												            <td>$3.76</td>
+												            <td><%= @menu.beer3_2 %></td>           
+												            <td><%= @menu.beer3_2_price %></td>
 												          </tr>
 												          <tr id="beer3_3">
-												            <td>Frio Light</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer3_3 %></td>           
+												            <td><%= @menu.beer3_3_price %></td>
 												          </tr>
 												          <tr id="beer3_4">
-												            <td>Beer 30</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer3_4 %></td>           
+												            <td><%= @menu.beer3_4_price %></td>
 												          </tr>
 												          <tr id="beer3_5">
-												            <td>Franconia</td>							            
-												            <td>$7.00</td>
+												            <td><%= @menu.beer3_5 %></td>           
+												            <td><%= @menu.beer3_5_price %></td>
 												          </tr>
 												        </tbody>
 											      	</table>
@@ -441,19 +441,19 @@
 								        <div id="pagerDiv" style="margin-left: 17.5%"> 									       
 												<div id="winePager" style="display: none">
 													<ul class="pagination">												    
-													    <li class="active waves-effect"><a href="">1</a></li>
-													    <li class="waves-effect"><a href="">2</a></li>
-													    <li class="waves-effect"><a href="">3</a></li>										
+													    <li class="active waves-effect"><a>1</a></li>
+													    <li class="waves-effect"><a>2</a></li>
+													    <li class="waves-effect"><a>3</a></li>				
 													</ul>
 												</div>	
 												<div id="beerPager" style="display: none">
 													<ul class="pagination">												    
-													    <li class="active waves-effect"><a href="">1</a></li>
-													    <li class="waves-effect"><a href="">2</a></li>
-													    <li class="waves-effect"><a href="">3</a></li>										
+													    <li class="active waves-effect"><a>1</a></li>
+													    <li class="waves-effect"><a>2</a></li>
+													    <li class="waves-effect"><a>3</a></li>	
 													</ul>
 												</div>								        										     
-									        </div>	
+									      </div>	
 							        	</div>
 							        </div>
 						        </div>						          	
